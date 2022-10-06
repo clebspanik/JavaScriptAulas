@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cárdapio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script>
+
+    function calculo1(){
+   // Produto           Cod   Preço
+   // cachorro quente   100   1.70;
+   // bauru simples     101   2.30;
+   // bauru com ovo     102   2.60;
+   // hamburguer        103   2.40;
+   // cheeseburguer     104   2.50;
+   // refrigerante      105   1.00; 
+
+    let c = Number(document.getElementById('cod_p').value);
+    let q = Number(document.getElementById('qtd_p').value);
+
+    
+     if(c == 100){
+        document.getElementById('out').innerHTML="Resposta: "+(q * 1.70).toFixed(2);
+    } else if (c == 101) {
+        document.getElementById('out').innerHTML="Resposta: "+(q * 2.30).toFixed(2);
+    } else if (c == 102){
+        document.getElementById('out').innerHTML="Resposta: "+(q * 2.60).toFixed(2);
+    } else if (c == 103){
+        document.getElementById('out').innerHTML="Resposta: "+(q * 2.40).toFixed(2);
+    } else if (c == 104) {
+        document.getElementById('out').innerHTML="Resposta: "+(q * 2.50).toFixed(2);
+    } else if (c == 105){
+        document.getElementById('out').innerHTML="Resposta: "+(q * 1.00).toFixed(2);
+    } else {
+        document.getElementById('out').innerHTML="Por favor, insira valores validos";
+    }
+
+}
+
+  </script>
+    <h2>Cálculo Preço Final</h2>
+        <p>Insira o código do produto e a quantidade adquirida.</p>
+        <div>
+            <form action="#" method="get">
+                <p>
+                    <label for="cod">Código do Produto: </label>
+                    <input type="text" name="codigo" id="cod_p" placeholder="insira o código do produto">
+                </p>
+
+                <p>
+                    <label for="qtd">Quantidade Adquirida: </label>
+                    <input type="text" name="quantidade" id="qtd_p" placeholder="insira a quantidade do produto">
+                </p>
+
+                <p>
+                    <input type="submit" value="Calcular" onclick="calculo1()">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <div>
+            <p id="out">Insira os dados solicitados e clique no botão.</p>
+        </div>
+
+        <script src="js/script.js"></script>
+
+
+
+  
+</body>
+
+</html>
