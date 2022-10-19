@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>POKEMON API</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./Imagens/logo_pokemon.webp" alt="">
+    </div>
+
+    <div class="consulta-pok">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Digite o nome do Pokemon para consulta ...">
+            <button class="btn btn-outline-primary" type="button" id="button-addon2">Pesquisar</button>
+        </div>
+    </div>
+
+    <div class="container-fluid text-jutify">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="img" id="show"></div>
+                <div >
+                    <div class="saude "></div>
+                    <div class="ataque"></div>
+                    <div class="defesa"></div>
+                    <div class="atqesp"></div>
+                    <div class="defesp"></div>
+                    <div class="velocidade"></div>
+                </div>
+            </div>
+            <div class="col-sm-8" id="informa">
+                <div class="name" id="informa"> </div>
+                <div class="number" id="informa"></div>
+                <div class="type" id="informa"> </div>
+                <div class="skill" id="informa"> </div>
+                <div class="peso" id="informa"> </div>
+                <div class="altura" id="informa"> </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
